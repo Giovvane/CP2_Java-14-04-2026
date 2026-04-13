@@ -14,11 +14,21 @@ public class MainAluno {
     private String nomeCompleto;
     private LocalDate dataDeNascimento;
 
-    //Construtor vazio
-    public Aluno(int registroMatricula, String nomeCompleto, LocalDate dataDeNascimento) {
+    //Construtor vazio, inicializar valor padrão.
+    public MainAluno() {
+    }
+    // Construtor com parâmetros
+    public MainAluno(int registroMatricula, String nomeCompleto, LocalDate dataDeNascimento) {
         this.registroMatricula = registroMatricula;
         this.nomeCompleto = nomeCompleto;
         this.dataDeNascimento = dataDeNascimento;
     }
-    
+    //Método para regras de negócio
+
+    public int getRegistroMatricula() {
+        return registroMatricula;
+    }
+    public void setRegistroMatricula(int registroMatricula) {
+        this.registroMatricula = registroMatricula;
+    }
 }
